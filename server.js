@@ -1,17 +1,15 @@
 ﻿
 require('dotenv').config();
 var cors = require('cors');
-let Telegram      = require('node-telegram-bot-api');
-let TelegramToken = '6153011GCtOS2ZKcKT0tW-HprMJ3vbdeOzKz839g';
-let TelegramBot   = new Telegram(TelegramToken, {polling: true});
+
 let fs 			  = require('fs');
-//let https     	  = require('https')
-//let privateKey    = fs.readFileSync('./ssl/b86club.key', 'utf8');
-//let certificate   = fs.readFileSync('./ssl/b86club.pem', 'utf8');
-//let credentials   = {key: privateKey, cert: certificate};
+let https     	  = require('https')
+let privateKey    = fs.readFileSync('./ssl/b86club.key', 'utf8');
+let certificate   = fs.readFileSync('./ssl/b86club.pem', 'utf8');
+let credentials   = {key: privateKey, cert: certificate};
 let express       = require('express');
 let app           = express();
-//let server 	  	  = https.createServer(credentials, app);
+let server 	  	  = https.createServer(credentials, app);
 app.use(cors({
     origin: '*',
     optionsSuccessStatus: 200
