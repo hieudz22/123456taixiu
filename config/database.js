@@ -1,12 +1,8 @@
-
 module.exports = {
-	'url': 'mongodb://127.0.0.1:27017',
-	'options': {
-		//'user':   'kvcpro',
-		//'pass':   'Minhhoang',
-		'dbName': 'RongVang88fun', // red
-		'useNewUrlParser': true,
-		'useUnifiedTopology': true,
-		//'autoIndex':       false,
-	},
+    'url': 'mongodb+srv://admin:yourpassword123@taixiuuuu.ix01okl.mongodb.net/?retryWrites=true&w=majority&appName=taixiuuuu',
+    'options': {
+        'useNewUrlParser': true,
+        'useUnifiedTopology': true,
+        'dbName': 'RongVang88fun'
+    }
 };
